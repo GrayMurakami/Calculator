@@ -1,0 +1,81 @@
+.calc {
+    margin: 50px auto;
+    width: 300px;
+    height: 500px;
+    border: 2px solid red;
+    background: black;
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 18px;
+    color: aliceblue;
+    box-shadow: 1px 1px 1px yellow;
+}
+
+.field {
+    height: 40px;
+    padding: 10px;
+    display: grid;
+    margin-top: 15px;
+    /* margin-bottom: px; */
+    font-size: 4rem;
+    justify-items: end;
+    align-items: end;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "clear clear interest addition"
+    "seven eight nine subtraction"
+    "four five six multiply"
+    "one two three division"
+    "plus-minus zero point result";
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.btn.clear {
+    grid-area: clear;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.btn {
+    color: aliceblue;
+    width: 50px;
+    height: 50px;
+    background: rgba(128, 128, 128, 0.534);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 1px red;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:hover {
+    color: red;
+}
+
+.btn:active {
+    filter: brightness(200%);
+}
+
+.btn.bg-blue {
+    background: blue;
+    box-shadow: 1px 1px 1px rgb(0, 234, 255);
+}
+
+.btn.bg-orange {
+    background: orange;
+    box-shadow: 1px 1px 1px yellow;
+}
+
+.author {
+    text-align: right;
+    text-shadow: 1px 1px 1px yellow;
+    color: blue;
+    font-size: 26px;
+    margin-top: 50px;
+}
